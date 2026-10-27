@@ -124,7 +124,7 @@ ol.steps li { padding: 6px 0; }
 .card:hover { box-shadow:0 12px 30px #253f3610; }
 .art { height:166px; display:grid; place-items:center; background:#e8ecda; }
 .art svg { height:136px; width:226px; }
-.art-soup { background:#f0ebdc; }.art-orange { background:#f8e8d3; }.art-onion { background:#eae5ed; }
+.art-icecream { background:#eef0e2; }.art-icecream-choc { background:#ece4de; }.art-quiche { background:#f5ead9; }.art-soup { background:#f0ebdc; }.art-orange { background:#f8e8d3; }.art-onion { background:#eae5ed; }
 .card-body { padding:22px; }.card h2 { font-size:1.18rem; }
 .card .tags { margin-top:14px; }.tag { background:none; padding:0; }.tag+.tag:before { content:'·'; padding:0 7px; }
 .card-bottom { display:flex; justify-content:space-between; border-top:1px solid var(--line); margin-top:18px; padding-top:14px; font-size:.85rem; font-weight:650; }
