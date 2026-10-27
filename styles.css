@@ -99,3 +99,45 @@ ol.steps li { padding: 6px 0; }
 .src { color: var(--muted); font-size: .9rem; margin: 14px 0 40px; }
 
 .site-footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; padding: 18px 0 30px; }
+/* A softer, spacious recipe-app treatment, with original food illustrations. */
+:root { --bg:#fbfaf6; --card:#fff; --ink:#253f36; --muted:#6c776e; --accent:#3b6b52; --accent-soft:#e7efe5; --chip:#eef1e8; --line:#e3e8dc; --radius:24px; --shadow:0 6px 24px rgba(35,64,45,.035); }
+.wrap { max-width:1080px; padding:0 28px; }
+.site-header { background:transparent; padding:28px 0 22px; }
+.site-header .wrap { display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+.brand-mark { background:#dfe8d0; border-radius:14px; width:42px; height:42px; display:grid; place-items:center; font-size:32px; }
+.site-title { font-size:1.4rem; font-weight:750; }
+.site-sub { margin-inline-start:auto; }
+.intro { padding:38px 0 28px; }
+.eyebrow { color:var(--accent); font-size:.85rem; font-weight:700; letter-spacing:.03em; }
+.intro h2 { font-size:clamp(2rem,5vw,3rem); line-height:1.2; letter-spacing:-.04em; margin:12px 0; }
+.intro>p:last-child { color:var(--muted); margin:0; }
+.toolbar { padding:12px 0 18px; }
+.search { border-radius:18px; padding:16px 20px; }
+.chips { gap:8px; margin-top:16px; }
+.chip { min-height:44px; padding:8px 18px; border:none; background:var(--chip); color:var(--ink); }
+.chip.active { background:var(--ink); color:white; }
+.section-label { display:flex; align-items:center; justify-content:space-between; margin:18px 0 0; }
+.section-label h3 { font-size:1.2rem; margin:0; }
+.section-label span { font-size:.85rem; color:var(--muted); }
+.grid { gap:22px; padding:18px 0 48px; }
+.card { padding:0; overflow:hidden; border:1px solid var(--line); }
+.card:hover { box-shadow:0 12px 30px #253f3610; }
+.art { height:166px; display:grid; place-items:center; background:#e8ecda; }
+.art svg { height:136px; width:226px; }
+.art-soup { background:#f0ebdc; }.art-orange { background:#f8e8d3; }.art-onion { background:#eae5ed; }
+.card-body { padding:22px; }.card h2 { font-size:1.18rem; }
+.card .tags { margin-top:14px; }.tag { background:none; padding:0; }.tag+.tag:before { content:'·'; padding:0 7px; }
+.card-bottom { display:flex; justify-content:space-between; border-top:1px solid var(--line); margin-top:18px; padding-top:14px; font-size:.85rem; font-weight:650; }
+.badge { font-size:.75rem; padding:4px 8px; }
+.recipe-head { padding:24px 0 12px; }.recipe-head h2 { font-size:2.2rem; line-height:1.2; letter-spacing:-.035em; }
+.back { min-height:44px; padding-top:18px; }
+section.block { padding:26px; box-shadow:none; margin:20px 0; }
+.original-text { white-space:pre-wrap; overflow-wrap:anywhere; line-height:1.95; color:#303d34; }
+.recipe-note { background:#f1ecdf; padding:22px 26px; border-radius:20px; }.recipe-note h3 { margin:0 0 10px; }.recipe-note p { margin:0; line-height:1.85; }
+.source-link { display:inline-block; background:var(--ink); color:white; text-decoration:none; border-radius:12px; padding:12px 18px; }
+.scaler button { min-height:44px; }.scaler button.active { background:var(--ink); }
+.site-footer { text-align:center; padding:24px 0; }
+:focus-visible { outline:3px solid #79a28c; outline-offset:4px; }
+@media(min-width:850px) { .grid { grid-template-columns:repeat(3,minmax(0,1fr)); } .recipe-head,.nutrition,.scaler,section.block,.recipe-note,.src { max-width:760px; margin-left:auto; margin-right:auto; } }
+@media(max-width:559px) { .wrap { padding:0 20px; }.site-header { padding:22px 0 18px; }.site-title { font-size:1.1rem; }.site-sub { font-size:.8rem; }.intro { padding:30px 0 18px; }.grid { gap:20px; }.art { height:155px; }.card-body { padding:20px; }section.block { padding:22px 18px; }.recipe-head h2 { font-size:1.8rem; } }
+@media(prefers-reduced-motion:reduce) { .card { transition:none; } }
